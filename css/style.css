@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol{
+    list-style: none;
+}
+
+header img{
+    width: 100%;
+}
+.road img{
+    margin-top: -10px;
+    width: 100%;
+}
+.sun {
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    animation:spin 4s linear infinite;
+}
+@keyframes spin { 
+    100% {transform: rotate(360deg); } 
+}
+
+.parachute {
+	width: 150px;
+    left: -10%;
+	bottom: 100%;
+    padding: 30px;
+	position: absolute;
+	animation-name: parachute;
+	animation-duration: 20s;
+	animation-delay: 3.5s;
+	animation-iteration-count: 1;
+}
+@keyframes parachute {
+	100%{
+        transform: translate(1550px);
+    }
+    from {
+		bottom: 20%;
+		left: -10%;
+	}
+}
+
+.cars img{
+    position: absolute;
+	width: 20%;
+}
+.left-car img {
+	left: -20%;
+	/* top: 70%;
+	transform: translate(150%, -0%);
+	transition-delay: 0.5s;
+	transition-duration: 3s; */
+}
+
+.right-car img {
+	right: -20%;
+	/* top: 70%; */
+	/* transform: translate(-150%, -0%);
+	transition-delay: 0.5s;
+	transition-duration: 3s; */
+}
+
+.left-car {
+	width: 100%;
+    bottom: 50%;
+	
+	position: absolute;
+	animation-name: leftcar;
+	animation-duration: 10s;
+	animation-delay: 1.5s;
+	animation-iteration-count: 3;
+}
+@keyframes leftcar {
+	100%{
+        transform: translate(130%);
+    }
+
+}
+
+.right-car {
+	width: 100%;
+    bottom: 40%;
+	
+	position: absolute;
+	animation-name: rightcar;
+	animation-duration: 10s;
+	animation-delay: 0.5s;
+	animation-iteration-count: 2;
+}
+@keyframes rightcar {
+	100%{
+        transform: translate(-130%);
+    }
+
+}
