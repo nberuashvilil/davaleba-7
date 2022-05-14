@@ -11,27 +11,17 @@ ol{
     list-style: none;
 }
 
-header img{
-    width: 100%;
+header {
+	max-width: 1800px;
+	height: 500px;
+	background-image: url(../img/Sky-header.jpeg);
+	background-size: 1800px;
 }
 
-/* .road{
-	position: relative;
-}
-.cars {
-	position: absolute;
-} */
-
-
-.road img{
-    margin-top: -10px;
-    width: 100%;
-}
 .sun {
-    width: 30%;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 5%;
+    left: 3%;
     width: 120px;
     height: 120px;
     animation:spin 4s linear infinite;
@@ -41,15 +31,15 @@ header img{
 }
 
 .parachute {
-	width: 150px;
+	width: 100px;
     left: -10%;
 	bottom: 100%;
     padding: 30px;
 	position: absolute;
 	animation-name: parachute;
 	animation-duration: 20s;
-	animation-delay: 3.5s;
-	animation-iteration-count: 1;
+	animation-delay: 3.0s;
+	animation-iteration-count: 2;
 }
 @keyframes parachute {
 	100%{
@@ -62,38 +52,45 @@ header img{
 }
 
 
+.road{
+	display: relative;
+	max-width: 1800px;
+	height: 400px;
+	background-image: url(../img/road-footer.jpg);
+	background-size: 1800px;
+}
 
-
-.left-car img{
+.l-car {
 	width: 20%;
-	left: -20%;
-	top: 70%;
+	left: 0%;
+	margin-top: 5%;
 	position: absolute;
-	animation-name: leftcar;
+	animation-name: lcar;
 	animation-duration: 10s;
 	animation-delay: 1.5s;
 	animation-iteration-count: 3;
 }
-@keyframes leftcar {
+@keyframes lcar {
 	100%{
-        transform: translate(1730px);
+        transform: translate(1000%);
     }
 
 }
 
-.right-car img{
+.r-car {
 	width: 20%;
-	right: -20%;
-	top: 90%;
+	right: 0%;
 	position: absolute;
-	animation-name: rightcar;
+	animation-name: rcar;
 	animation-duration: 10s;
 	animation-delay: 0.5s;
 	animation-iteration-count: 2;
 }
-@keyframes rightcar {
+@keyframes rcar {
 	100%{
-        transform: translate(-1730%);
+        transform: translate(-1000%);
     }
 
 }
+
+
