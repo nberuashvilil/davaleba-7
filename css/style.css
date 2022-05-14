@@ -14,6 +14,15 @@ ol{
 header img{
     width: 100%;
 }
+
+/* .road{
+	position: relative;
+}
+.cars {
+	position: absolute;
+} */
+
+
 .road img{
     margin-top: -10px;
     width: 100%;
@@ -52,30 +61,13 @@ header img{
 	}
 }
 
-.cars img{
-    position: absolute;
+
+
+
+.left-car img{
 	width: 20%;
-}
-.left-car img {
 	left: -20%;
-	/* top: 70%;
-	transform: translate(150%, -0%);
-	transition-delay: 0.5s;
-	transition-duration: 3s; */
-}
-
-.right-car img {
-	right: -20%;
-	/* top: 70%; */
-	/* transform: translate(-150%, -0%);
-	transition-delay: 0.5s;
-	transition-duration: 3s; */
-}
-
-.left-car {
-	width: 100%;
-    bottom: 50%;
-	
+	top: 70%;
 	position: absolute;
 	animation-name: leftcar;
 	animation-duration: 10s;
@@ -84,15 +76,15 @@ header img{
 }
 @keyframes leftcar {
 	100%{
-        transform: translate(130%);
+        transform: translate(1730px);
     }
 
 }
 
-.right-car {
-	width: 100%;
-    bottom: 40%;
-	
+.right-car img{
+	width: 20%;
+	right: -20%;
+	top: 90%;
 	position: absolute;
 	animation-name: rightcar;
 	animation-duration: 10s;
@@ -101,7 +93,7 @@ header img{
 }
 @keyframes rightcar {
 	100%{
-        transform: translate(-130%);
+        transform: translate(-1730%);
     }
 
 }
